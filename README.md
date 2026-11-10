@@ -1,5 +1,9 @@
 # 홈페이지 문의 → 회사 메일 알림 (무료, API 키 없이)
 
+> **English summary** — A free template that emails you every contact-form submission on a Cloudflare Workers / Pages (Hono) site, with no email API key. The server saves the inquiry as usual, then posts it in the background (`waitUntil`) to a Google Apps Script web app, which sends the email via Gmail.
+>
+> Setup: (1) deploy `apps-script/Code.gs` as a web app, (2) store its URL as the `NOTIFY_WEBHOOK_URL` secret, (3) add the notify call right after your DB insert (see `server/inquiry-notify.ts`). Gmail quota for consumer accounts: 100 recipients/day.
+
 홈페이지 문의 폼에 글이 들어오면 지금처럼 DB에 저장하면서, 같은 내용을 회사 메일로도 보내는 연동입니다.
 Cloudflare Workers / Pages에서 돌아가는 Hono 앱(젠스파크 같은 AI 빌더로 만든 사이트 포함)을 기준으로 했고, 메일 서비스 가입이나 API 키 없이 구글 계정 하나로 동작합니다.
 
@@ -79,3 +83,7 @@ Apps Script (doPost) → MailApp → 회사 메일함
 ## 적용 사례
 
 실제 운영 중인 지역 시스템에어컨 시공업체 홈페이지(젠스파크로 제작, Genspark Hosting)에 적용해 사용하고 있습니다.
+
+## 라이선스
+
+[MIT](LICENSE)
