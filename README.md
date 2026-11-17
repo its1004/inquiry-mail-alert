@@ -9,6 +9,8 @@ Cloudflare Workers / Pages에서 돌아가는 Hono 앱(젠스파크 같은 AI �
 
 ![문의가 들어오면 회사 메일함에 도착하는 알림 메일 예시](docs/1794884940150_image.png)
 
+자세한 설명 글: [젠스파크로 만든 홈페이지에 문의 알림 메일 붙이기 (네이버 블로그)](https://m.blog.naver.com/asyeoeun/224480359233)
+
 ## 왜 이렇게 만들었나
 
 - Cloudflare Workers는 서버리스 환경이라 일반 서버처럼 SMTP로 메일을 보내도록 설정하기가 까다롭습니다. 보통은 Resend 같은 메일 발송 API에 가입하고 API 키를 관리해야 합니다.
