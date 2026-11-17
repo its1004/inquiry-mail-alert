@@ -86,7 +86,7 @@ Apps Script (doPost) → MailApp → 회사 메일함
 
 ## 적용 사례
 
-실제 운영 중인 지역 시스템에어컨 시공업체 홈페이지(젠스파크로 제작, Genspark Hosting)에 적용해 사용하고 있습니다.
+실제 운영 중인 지역 시스템에어컨 시공업체 홈페이지(젠스파크로 제작, Genspark Hosting)에 적용해 사용하고 있습니다. 적용 사이트: [global2022.co.kr](https://global2022.co.kr/)
 
 ## 라이선스
 
